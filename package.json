@@ -1,0 +1,30 @@
+{
+  "name": "@kintisoft/sdk",
+  "version": "0.1.7",
+  "description": "Official JavaScript/TypeScript SDK for KintiSoft APIs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "kintisoft",
+    "sdk",
+    "api",
+    "multitenant"
+  ],
+  "author": "KintiSoft",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
