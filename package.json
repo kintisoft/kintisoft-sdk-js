@@ -1,6 +1,6 @@
 {
   "name": "@kintisoft/sdk",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Official JavaScript/TypeScript SDK for KintiSoft APIs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
