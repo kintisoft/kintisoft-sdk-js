@@ -1,14 +1,18 @@
 {
   "name": "@kintisoft/sdk",
-  "version": "0.1.8",
+  "version": "0.1.11",
   "description": "Official JavaScript/TypeScript SDK for KintiSoft APIs",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "type": "module",       
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "types": "./dist/index.d.ts",
   "files": [
     "dist/**/*"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.json",
     "clean": "rm -rf dist",
     "prepublishOnly": "npm run clean && npm run build"
   },

@@ -1,7 +1,8 @@
-import { HttpClient } from "../httpClient";
+import { HttpClient } from "../httpClient.js";
 
 export interface CreateProspectPayload {
-  contact_name: string;
+  name: string;
+  contact_name?: string;
   email?: string;
   phone?: string;
   accept_ads?: boolean;

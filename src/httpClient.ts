@@ -56,7 +56,7 @@ export class HttpClient {
       const res = await fetch(url, {
         method,
         headers: {
-          Authorization: `Bearer ${this.apiKey}`,
+          "x-api-key": `${this.apiKey}`,
           "Content-Type": "application/json",
           Accept: "application/json",
         },

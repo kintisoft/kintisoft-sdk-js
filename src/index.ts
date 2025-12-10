@@ -1,9 +1,9 @@
-import { HttpClient, HttpClientOptions, KintiSoftError } from "./httpClient";
+import { HttpClient, HttpClientOptions, KintiSoftError } from "./httpClient.js";
 import {
   ProspectsModule,
   CreateProspectPayload,
   CreateProspectResponse,
-} from "./modules/prospects";
+} from "./modules/prospects.js";
 
 export interface KintiSoftClientOptions extends HttpClientOptions {}
 
